@@ -23,8 +23,8 @@ body {
 
 .painel {
     margin: 0;
-    height: 60%;
-    width: 80%;
+    height: 90%;
+    width: 40%;
     position: absolute;
     border-radius: 20px;
     background-image: url('img/DesenhoSabrinny.jpeg');
