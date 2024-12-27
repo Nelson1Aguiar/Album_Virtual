@@ -21,11 +21,23 @@ const btn5Proxima = document.getElementById('btn5Proxima');
 
 const btn6Voltar = document.getElementById('btn6Voltar');
 
+document.addEventListener('DOMContentLoaded', function () {
+    painel2.style.backgroundImage = "url('img/PrimeiraFoto.jpeg')";
+    painel2.style.backgroundSize = "cover";
+
+    painel3.style.backgroundImage = "url('img/BackGroundImage.jpeg')";
+
+    painel4.style.backgroundImage = "url('img/Date.jpeg')";
+
+    painel5.style.backgroundImage = "url('img/Natal.jpeg')";
+
+    painel6.style.backgroundImage = "url('img/ultimoDesenho.jpeg')";
+    painel6.style.backgroundSize = "cover";
+});
+
 btn1.addEventListener("click", function(){
     painel1.classList.remove('active');
     painel2.classList.add('active');
-    painel2.style.backgroundImage = "url('img/PrimeiraFoto.jpeg')";
-    painel2.style.backgroundSize = "cover";
 })
 
 btn2Voltar.addEventListener('click', function() {
@@ -36,7 +48,6 @@ btn2Voltar.addEventListener('click', function() {
 btn2Proxima.addEventListener("click", function(){
     painel2.classList.remove('active');
     painel3.classList.add('active');
-    painel3.style.backgroundImage = "url('img/BackGroundImage.jpeg')";
 })
 
 btn3Voltar.addEventListener('click', function() {
@@ -47,7 +58,6 @@ btn3Voltar.addEventListener('click', function() {
 btn3Proxima.addEventListener("click", function(){
     painel3.classList.remove('active');
     painel4.classList.add('active');
-    painel4.style.backgroundImage = "url('img/Date.jpeg')";
 })
 
 btn4Voltar.addEventListener('click', function() {
@@ -58,7 +68,6 @@ btn4Voltar.addEventListener('click', function() {
 btn4Proxima.addEventListener("click", function(){
     painel4.classList.remove('active');
     painel5.classList.add('active');
-    painel5.style.backgroundImage = "url('img/Natal.jpeg')";
 })
 
 btn5Voltar.addEventListener('click', function() {
@@ -69,8 +78,6 @@ btn5Voltar.addEventListener('click', function() {
 btn5Proxima.addEventListener("click", function(){
     painel5.classList.remove('active');
     painel6.classList.add('active');
-    painel6.style.backgroundImage = "url('img/ultimoDesenho.jpeg')";
-    painel6.style.backgroundSize = "cover";
 })
 
 btn6Voltar.addEventListener('click', function() {
