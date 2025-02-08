@@ -4,6 +4,7 @@ const painel3 = document.getElementById("painel3");
 const painel4 = document.getElementById("painel4");
 const painel5 = document.getElementById("painel5");
 const painel6 = document.getElementById("painel6");
+const painelFinal = document.getElementById("painelFinal");
 
 const btn1 = document.getElementById('btn1');
 
@@ -20,6 +21,9 @@ const btn5Voltar = document.getElementById('btn5Voltar');
 const btn5Proxima = document.getElementById('btn5Proxima');
 
 const btn6Voltar = document.getElementById('btn6Voltar');
+const btn6Proxima = document.getElementById('btn6Proxima');
+
+const btnFinal = document.getElementById('btnFinal');
 
 document.addEventListener('DOMContentLoaded', function () {
     painel2.style.backgroundImage = "url('img/PrimeiraFoto.jpeg')";
@@ -31,8 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     painel5.style.backgroundImage = "url('img/Natal.jpeg')";
 
-    painel6.style.backgroundImage = "url('img/ultimoDesenho.jpeg')";
-    painel6.style.backgroundSize = "cover";
+    painel6.style.backgroundImage = "url('img/AnoNovo.jpeg')";
+
+    painelFinal.style.backgroundImage = "url('img/ultimoDesenho.jpeg')";
+    painelFinal.style.backgroundSize = "cover";
 });
 
 btn1.addEventListener("click", function(){
@@ -83,4 +89,14 @@ btn5Proxima.addEventListener("click", function(){
 btn6Voltar.addEventListener('click', function() {
     painel6.classList.remove('active');
     painel5.classList.add('active');
+});
+
+btn6Proxima.addEventListener("click", function(){
+    painel6.classList.remove('active');
+    painelFinal.classList.add('active');
+})
+
+btnFinal.addEventListener('click', function() {
+    painelFinal.classList.remove('active');
+    painel6.classList.add('active');
 });
