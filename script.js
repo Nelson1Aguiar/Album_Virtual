@@ -5,6 +5,7 @@ const painel4 = document.getElementById("painel4");
 const painel5 = document.getElementById("painel5");
 const painel6 = document.getElementById("painel6");
 const painel7 = document.getElementById("painel7");
+const painel8 = document.getElementById("painel8");
 const painelFinal = document.getElementById("painelFinal");
 
 const btn1 = document.getElementById('btn1');
@@ -27,6 +28,9 @@ const btn6Proxima = document.getElementById('btn6Proxima');
 const btn7Voltar = document.getElementById('btn7Voltar');
 const btn7Proxima = document.getElementById('btn7Proxima');
 
+const btn8Voltar = document.getElementById('btn8Voltar');
+const btn8Proxima = document.getElementById('btn8Proxima');
+
 const btnFinal = document.getElementById('btnFinal');
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -42,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
     painel6.style.backgroundImage = "url('img/AnoNovo.jpeg')";
 
     painel7.style.backgroundImage = "url('img/Date2.jpeg')";
+
+    painel8.style.backgroundImage = "url('img/Pascoa.jpeg')";
 
     painelFinal.style.backgroundImage = "url('img/ultimoDesenho.jpeg')";
     painelFinal.style.backgroundSize = "cover";
@@ -109,10 +115,20 @@ btn7Voltar.addEventListener('click', function() {
 
 btn7Proxima.addEventListener("click", function(){
     painel7.classList.remove('active');
+    painel8.classList.add('active');
+})
+
+btn8Voltar.addEventListener('click', function() {
+    painel8.classList.remove('active');
+    painel7.classList.add('active');
+});
+
+btn8Proxima.addEventListener("click", function(){
+    painel8.classList.remove('active');
     painelFinal.classList.add('active');
 })
 
 btnFinal.addEventListener('click', function() {
     painelFinal.classList.remove('active');
-    painel7.classList.add('active');
+    painel8.classList.add('active');
 });
